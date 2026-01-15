@@ -73,11 +73,27 @@ namespace IF_ELSEIF_ELSE
                 Console.WriteLine("skibidi sigmaless");
             }
             else if (kod <= 2015 && kod >= 2010)
-            {
-                Console.WriteLine("kas ta tahab saada programmeerijaks (JAH/EI)");
-            }
-            string tahab = Console.ReadLine();
-            if
+            {                
+                while (true)
+                {
+                    Console.WriteLine("kas ta tahab saada programmeerijaks (JAH/EI)");
+                    string tahab = Console.ReadLine();
+                    if (tahab == "JAH")
+                    {
+                        Console.WriteLine("tubli");
+                        break;
+                    }
+                    else if (tahab == "EI")
+                    {
+                        Console.WriteLine("kahju");
+                        break;
+                    }
+                    else
+                    {
+                        continue;
+                    }
+                }
+            }                       
         }
     }
 }
