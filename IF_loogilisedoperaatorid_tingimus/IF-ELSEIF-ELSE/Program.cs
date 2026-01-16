@@ -41,7 +41,7 @@ namespace IF_ELSEIF_ELSE
             //  kui 2FA kood on 6 tähte, siis lase sisse, öeldes "oled sissepääsenud"
             //NB: 2FA kood ei pea matchima eksisteeriva näitega nagu parool.
 
-            Console.WriteLine("pikkust");
+            Console.WriteLine("kirjuta oma pikkust");
             int pikkust = Convert.ToInt32 (Console.ReadLine());
             if (pikkust <= 0)
             {
@@ -61,9 +61,9 @@ namespace IF_ELSEIF_ELSE
             }
             Console.WriteLine("kui vana sa oled");
             int vanus = Convert.ToInt32(Console.ReadLine());
-            Console.WriteLine("aastaarvu");
+            Console.WriteLine("kirjuta oma aastaarvu");
             int aeg = Convert.ToInt32(Console.ReadLine());
-            int kod = vanus - aeg;
+            int kod = aeg - vanus;
             if (kod >= 2020 && kod <= 2025)
             {
                 Console.WriteLine(" kes sulle arvuti juba andis");
@@ -93,7 +93,89 @@ namespace IF_ELSEIF_ELSE
                         continue;
                     }
                 }
-            }                       
+            }
+            while (true)
+            {
+                Console.WriteLine("kuidas sinu suunakood?");
+                int suunakood = Convert.ToInt32(Console.ReadLine());
+                if (suunakood <= 9999)
+                {
+                    Console.WriteLine("1 täht on puudu");
+                    continue;
+                }
+                else if (suunakood >= 99999)
+                {
+                    Console.WriteLine("1 täht on üle");
+                    continue;
+                }
+                else
+                {
+                    Console.WriteLine("ahha nüüd tean kus elad");
+                    break;
+                }
+            }
+
+            while (true)
+            {
+                Console.WriteLine("kas ta töötab? (JAH/EI)");
+                string töö = Console.ReadLine();
+                if (töö == "JAH")
+                {
+                    Console.WriteLine("tubli");
+                    break;
+                }
+                else if (töö == "EI")
+                {
+                    Console.WriteLine("kahju");
+                    Console.WriteLine("miks sa siis töökohta ei otsi?");
+                    string otsin = Console.ReadLine();
+                    if (otsin == "otsin")
+                    {
+                        Console.WriteLine("loodan et saad varsti tööle c:");
+                        break;
+                    }
+                    else
+                    {
+                        break;
+                    }
+                }
+                else
+                {
+                    continue;
+                }
+            }           
+
+            Console.WriteLine("kirjuta oma parool");
+            string parool = Console.ReadLine();            
+            while (true)
+            {
+                if (parool == "parool")
+                {
+                    Console.WriteLine("kirjuta oma 2FA koodi");
+                    int kood = Convert.ToInt32(Console.ReadLine());
+                    if (kood >= 999999)
+                    {
+                        Console.WriteLine("kood on liiga pikk");
+                        continue;
+                    }
+                    else if (kood <= 99999)
+                    {
+                        Console.WriteLine("kood on liiga lühike");
+                        continue;
+                    }
+                    else
+                    {
+                        Console.WriteLine("oled sissepääsenud");
+                        break;
+                    }
+                }
+                else
+                {
+                    Console.WriteLine("sissepääs keelatud");
+                    continue;
+                }
+            }
+               
         }
     }
 }
