@@ -32,6 +32,11 @@
             //tekita uus char-tüüpi muutuja kuhu omistad sisse char konverteerimisega täisarvu 
             //kuva sõnum, "sinu otsitud täht on <char>" 
 
+
+            //1. "pikkus"
+            Console.WriteLine("kui pikk ta sentimeetrites on");
+            
+            
         }
     }
 }
