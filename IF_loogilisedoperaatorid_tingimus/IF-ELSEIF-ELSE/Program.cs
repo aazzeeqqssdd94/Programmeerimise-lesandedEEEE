@@ -159,7 +159,7 @@ namespace IF_ELSEIF_ELSE
                     Console.WriteLine("tubli"); //väljastab teksti: "tubli" - выдает текст: «молодец»
                     break; //tsükli väljumine -
                 }
-                else if (töö == "EI") //Kas „tahab“ on võrdne sõnaga „EI“? -
+                else if (töö == "EI") //Kas „tahab“ on võrdne sõnaga „EI“? - //«Хочет» равнозначно слову «НЕТ»? -
                 {
                     Console.WriteLine("kahju"); //väljastab teksti: "kahju" -
                     Console.WriteLine("miks sa siis töökohta ei otsi?"); //väljastab teksti: "miks sa siis töökohta ei otsi?" -
@@ -208,6 +208,44 @@ namespace IF_ELSEIF_ELSE
                 //Lõpp
             }
                
+        }
+        public static void gg ()
+        {
+            //vooskem
+
+            //väljastab teksti - выводит текст
+
+            //luuakse muutuja tüüp int - создаёться переменная типа синт 
+            int gg;
+            //luuakse muutuja tüüp string - создаёться переменная типа стрин
+            string gg1;
+            //luuakse muutuja tüüp bool - создаёться переменная типа бул
+            bool gg2;
+            //luuakse muutuja tüübiga int, mis teisendab Convert.ToInt32 abil sisestatud vastuse Console.ReadLine()-st.
+            int gg3 = Convert.ToInt32(Console.ReadLine());
+            //Kas „pikust“ on väiksem või võrdne 0-ga? - разве „pikust“ меньше или ровно 0?
+            //if (pikkust <= 0)
+            //{
+            //    Console.WriteLine("võimatu pikkus");
+            //}
+            //luuakse string-tüüpi muutuja "gg", kuhu kirjutatakse vastus Console.ReadLine(); -создается переменная типа string «пароль», в которую записывается ответ Console.ReadLine();
+            string gg4 = Console.ReadLine();
+
+            //Kas „kood“ on väiksem või võrdne 99999-ga? - «Код» меньше или равен 99999?
+            //Kas „kood“ on suurem või võrdne 999999-ga? - «Код» больше или равен 999999?
+            //Kas „tahab“ on võrdne sõnaga „EI“? - «Хочет» равнозначно слову «НЕТ»? -
+            //luuakse meetod „gg“ - создаёться метод "gg"
+            //luuakse case „dd“ - создаёться case "dd"
+            //loetakse muutuja tüübi „string“ „gg“ pikkus - считываеться длина переменной типа "string" "gg"
+            //kuni muutuja „gg“ ei ole võrdne 0-ga - пока переменная "gg" не равна 0 - !=
+            //jagada  muutuja „gg“ / „gg“ga =  делить  переменную "gg" на "gg" - /
+            //korrutada muutuja „gg“ muutujaga „gg1“ - умножить переменную "gg" на "gg1" - *
+            //muutujate „gg“ liitmine „gg1“ - сложение пременых "gg" на "gg1"  - +
+            //muutujate „gg“ asendamine „gg1“ga  - вычетание пременых "gg" на "gg1"  - -
+            //andmetüüp „string“ - тип данных "string"
+            //andmetüüp „int“ - тип данных "int"
+            //andmetüüp „string“ - тип данных "bool"
+            
         }
     }
 }
