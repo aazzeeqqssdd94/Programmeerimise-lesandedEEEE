@@ -3,3 +3,9 @@ Vooskeemi ülesandeid spetsiifiliselt ei ole, peale järgnevate juhiste:
 Enne repos olevate muude ülesannete lahendamist, tee vastavale programmeerimisülesandele vooskeem, ja siis alles programmeeri.
 
 Kõik, häf fun
+
+У заданий по блок-схемам нет никаких специфических требований, кроме следующих инструкций:
+
+Прежде чем приступить к решению других заданий, создайте блок-схему для соответствующего программирования, а затем приступайте к программированию.
+
+Все, хэф фун
